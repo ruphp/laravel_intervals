@@ -45,7 +45,7 @@ class intervals extends Command
         else {
             $results->whereNull('end');
         }
-        $results = $results->ddRawSql();
+        $results = $results->get();
 
         echo '|  id  | start |  end  |' . PHP_EOL;
 
